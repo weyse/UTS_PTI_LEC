@@ -341,6 +341,7 @@
 
 
         if(nim.length != 11){
+             showAlert("NIM harus sama dengan 11 angka", "danger");
             return;
         }
 
@@ -355,10 +356,10 @@
           index++;
         }
 
-        if(mahasiswalist.indexOf(nim) != -1){
-             showAlert("NIM harus sama dengan 11 angka", "danger");
-            return;
-        }
+        // if(mahasiswalist.indexOf(nim) != -1){
+            
+        //     return;
+        // }
         let mahasiswa = {
                     nama: nama,
                     nim: nim,
