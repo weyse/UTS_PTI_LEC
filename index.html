@@ -170,7 +170,7 @@
         <input type="number" id="nim" name="nim" placeholder="NIM Mahasiswa" required>
         <input type="text" id="alamat" name="alamat" placeholder="Alamat Mahasiswa" required>
         <input type="number" id="angkatan" name="angkatan" placeholder="Tahun Angkatan" required>
-        <input type="submit" onclick="showAlert('Mahasiswa telah ditambahkan!', 'success')" value="Tambah Mahasiswa">
+        <input type="submit"  value="Tambah Mahasiswa">
     </form>
 
     <table id="tableMahasiswa">
@@ -368,6 +368,8 @@
         mahasiswalist.push(mahasiswa);
 
         localStorage.setItem("data", JSON.stringify(mahasiswalist));
+
+        showAlert('Mahasiswa telah ditambahkan!', 'success');
 
 
         if(4 < tbody.children.length){
