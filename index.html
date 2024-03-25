@@ -348,16 +348,17 @@
         index = 0;
         while(mahasiswalist[index]){
           if(mahasiswalist[index].nim == nim){
-            showAlert("NIM harus sama dengan 11 angka", "danger");
+              showAlert("Sudah ada nim yg sama", "danger");
+           
             return;
           }
           index++;
         }
 
-        // if(mahasiswalist.indexOf(nim) != -1){
-        showAlert("Sudah ada nim yg sama", "danger");
-        //     return;
-        // }
+        if(mahasiswalist.indexOf(nim) != -1){
+             showAlert("NIM harus sama dengan 11 angka", "danger");
+            return;
+        }
         let mahasiswa = {
                     nama: nama,
                     nim: nim,
